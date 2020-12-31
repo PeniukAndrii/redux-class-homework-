@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.User{
+    display: flex;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.User-Form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 18px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.User-Form>span{
+    padding: 5px 0 5px 0;
 }
-
-.App-link {
-  color: #61dafb;
+.User-Form>button{
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #4a14c3;
+    border-radius: 10px;
+    border: 1px solid #4a14c3;
+    outline: none;
+    color: white;
+    transition: 0.5s;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.User-Form>button:hover{
+    background-color: #610bf8;
+    border: 1px solid #610bf8;
+    opacity: 0.8;
+    color: #cacaca;
+}
+.true{
+    background-color: #b998ef;
+    opacity: 0.9;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.true>form>span{
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 2px;
+}
+.false{
+    display: none;
+}
+.Solo{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    padding-left: 5px;
+}
+.BTN{
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #4a14c3;
+    border-radius: 10px;
+    border: 1px solid #500de9;
+    outline: none;
+    color: white;
+    transition: 0.5s;
+}
+.BTN:hover{
+    opacity: 0.8;
+    background-color: #610bf8;
+    color: #cacaca;
+    border: 1px solid #610bf8;
+}
+.User>div>span{
+    font-size: 20px;
+    font-weight: 500;
+}
+.Solo>div{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 0 5px 0 3px;
+}
+.Hide-Chose{
+    display: flex;
 }
